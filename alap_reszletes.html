@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- DataTable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
+
+
+    <title>Hálózatsemlegesség mérése</title>
+</head>
+
+<body>
+    <main>
+        <div class="kozepe py-0  text-center">
+            <!-- <div class="row col-md-12 col-lg-12 text-center"> -->
+            <!-- Alap mérés -->
+            <!--  -->
+            <!-- <div class="col-md-12 col-lg-12 text-center"> -->
+
+
+
+            <!-- TCP port-ok kártya -->
+            <div class="card py-3 kartya">
+                <div class="card-header my-0">
+                    <h2>Alap mérés - Részletes kiválasztás</h2>
+                </div>
+
+                <div class="meres mb-0 text-left">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input position-static" type="checkbox" id="inline_tcp" name="ABC"
+                            aria-label="a" checked>
+                        <a class="btn btn-primary px-3 my-0" id="meres1" type="text">Mérés 1</a>
+                        <a class="mx-3" id="table_header">Blokkolt TCP portok
+                            felderítése - Nem szükséges portok kiválasztása: </a>
+                    </div>
+                </div>
+
+                <!-- táblázat -->
+                <div class="kozepe py-3">
+                    <table id="ports_table" border="1">
+                        <tbody id="theBody">
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- /TCP port-ok kártya VÉGE -->
+
+            <!-- DNS kártya -->
+            <div class="card py-4 kartya">
+                <div class="meres mb-0 text-left">
+                    <div class="flex-item form-check form-check-inline">
+                        <input class="form-check-input position-static" type="checkbox" id="inline_dns" aria-label="c"
+                            checked />
+                        <a class="btn btn-primary px-3 my-0" id="meres2" role="button">Mérés 2</a>
+                        <a class="mx-3" id="dns_header"> DNS feloldás manipulálásának felderítése </a>
+                    </div>
+                    <div class="megadas">
+                        <label for="url_DNS" id="label_DNS"> DNS szerver megadás</label>
+                        <input type="text" id="url_DNS" placeholder="defaultDNS.com" pattern="[A-Za-z].a-z" />
+                    </div>
+                </div>
+            </div> <!-- /DNS kártya VÉGE -->
+
+            <!-- PROXY kártya -->
+            <div class="card py-4 kartya">
+                <div class="meres mb-0 text-left">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input position-static" type="checkbox" id="inline_proxy" aria-label="c"
+                            checked>
+                        <a class="btn btn-primary px-3 my-0" id="meres3" role="button">Mérés 3</a>
+                        <a class="mx-3" id="proxy_header"> HTTP Proxy felderítése </a>
+                    </div>
+                    <div class="megadas">
+                        <label for="url_Proxy" id="label_Proxy">Proxy szerver megadás</label>
+                        <input type="text" name="url" id="url_Proxy" placeholder="defaultProxy.com" pattern="[A-Za-z].a-z" />
+                    </div>
+                </div>
+            </div>
+            <!-- /PROXY kártya VÉGE -->
+
+            <!-- BROWSING kártya -->
+            <div class="card py-4">
+                <div class="meres mb-0 text-left">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input position-static" type="checkbox" id="inline_browsing" aria-label="d"
+                            checked>
+                        <a class="btn btn-primary px-3 my-0" id="meres4" role="button">Mérés 4</a>
+                        <a class="mx-3" id="search_header"> Böngészés korlátozása </a>
+                    </div>
+                    <div class="megadas">
+                        <label for="url_WEB" id="label_WEB">Weboldal: URL megadás</label>
+                        <input type="url" name="url" id="url_WEB" placeholder="http://weboldal.com" pattern="http://*.*" />
+                    </div>
+                </div>
+            </div>
+            <!-- /BROWSING kártya VÉGE -->
+
+            <!-- MÉRÉS oldalra-menés -->
+            <div class="mb-3 text-right">
+                <p>
+                    <a class="btn btn-primary btn-sm float-right" href="alapmeres_start.html" role="button" id="start">
+                        <i class="fas fa-play-circle"></i> Mérések indítása </a>
+                </p>
+            </div>
+            <!-- /MÉRÉS oldalra-menés VÉGE -->
+        </div>
+    </main>
+
+
+    <div class="footer-container">
+        <!-- Site footer -->
+        <footer class="footer">&copy; SmartComLab <span id="foot_info"></span>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/a_reszletes.js"></script>
+
+</body>
+
+</html>

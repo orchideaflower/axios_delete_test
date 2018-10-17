@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>demo</title>
+</head>
+
+<body>
+    ​
+    <table border='1' id="myTable">
+        <tr>
+            <th>Id</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><span>1</span></td>
+            <td><strong>Moto G</strong></td>
+            <td>Moto G next generation smart phone</td>
+            <td>
+                <button class="btnSelect">Select</button>
+            </td>
+        </tr>
+        <tr>
+            <td><span>2</span></td>
+            <td><strong>Iphone SE</strong></td>
+            <td>Iphone laucnhed new phone bosy of 5s with feature of 6s</td>
+            <td>
+                <button class="btnSelect">Select</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>3</span></td>
+            <td><strong>Sony z3</strong></td>
+            <td>This is waterproof, well designed, etc</td>
+            <td>
+                <button class="btnSelect">Select</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>4</span></td>
+            <td><strong>Moto X Play</strong></td>
+            <td>Another class product from Moto G Family</td>
+            <td>
+                <button class="btnSelect">Select</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><span>5</span></td>
+            <td><strong>Samsung S7</strong></td>
+            <td>Best smart phone, nice UI etc.</td>
+            <td>
+                <button class="btnSelect">Select</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js">
+        $(document).ready(function () {
+
+            // code to read selected table row cell data (values).
+            $("#myTable").on('click', '.btnSelect', function () {
+                // get the current row
+                var currentRow = $(this).closest("tr");
+
+                var col1 = currentRow.find("td:eq(0)").html(); // get current row 1st table cell TD value
+                var col2 = currentRow.find("td:eq(1)").html(); // get current row 2nd table cell TD value
+                var col3 = currentRow.find("td:eq(2)").html(); // get current row 3rd table cell  TD value
+                var data = col1 + "\n" + col2 + "\n" + col3;
+
+                alert(data);
+            });
+        });
+    </script>
+</body>
+
+</html>

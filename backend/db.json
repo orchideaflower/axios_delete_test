@@ -1,0 +1,192 @@
+{
+  "allPorts": [{
+      "id": 1,
+      "portNumber": "1"
+    },
+    {
+      "id": 2,
+      "portNumber": "20"
+    },
+    {
+      "id": 3,
+      "portNumber": "22"
+    },
+    {
+      "id": 4,
+      "portNumber": "23"
+    },
+    {
+      "id": 5,
+      "portNumber": "25"
+    },
+    {
+      "id": 6,
+      "portNumber": "53"
+    },
+    {
+      "id": 7,
+      "portNumber": "69"
+    },
+    {
+      "id": 8,
+      "portNumber": "70"
+    },
+    {
+      "id": 9,
+      "portNumber": "79"
+    },
+    {
+      "id": 10,
+      "portNumber": "80"
+    },
+    {
+      "id": 11,
+      "portNumber": "103"
+    },
+    {
+      "id": 12,
+      "portNumber": "110"
+    },
+    {
+      "id": 13,
+      "portNumber": "119"
+    },
+    {
+      "id": 14,
+      "portNumber": "137"
+    },
+    {
+      "id": 15,
+      "portNumber": "156"
+    },
+    {
+      "id": 16,
+      "portNumber": "161"
+    },
+    {
+      "id": 17,
+      "portNumber": "179"
+    },
+    {
+      "id": 18,
+      "portNumber": "194"
+    },
+    {
+      "id": 19,
+      "portNumber": "443"
+    },
+    {
+      "id": 20,
+      "portNumber": "546"
+    }
+  ],
+  "testedPorts": [{
+      "id": 1,
+      "portNumber": "1"
+    },
+    {
+      "id": 2,
+      "portNumber": "20"
+    },
+    {
+      "id": 3,
+      "portNumber": "22"
+    },
+    {
+      "id": 4,
+      "portNumber": "23"
+    },
+    {
+      "id": 5,
+      "portNumber": "25"
+    },
+    {
+      "id": 6,
+      "portNumber": "53"
+    },
+    {
+      "id": 7,
+      "portNumber": "69"
+    },
+    {
+      "id": 8,
+      "portNumber": "70"
+    },
+    {
+      "id": 9,
+      "portNumber": "79"
+    },
+    {
+      "id": 10,
+      "portNumber": "80"
+    },
+    {
+      "id": 11,
+      "portNumber": "103"
+    },
+    {
+      "id": 12,
+      "portNumber": "110"
+    },
+    {
+      "id": 13,
+      "portNumber": "119"
+    },
+    {
+      "id": 14,
+      "portNumber": "137"
+    },
+    {
+      "id": 15,
+      "portNumber": "156"
+    },
+    {
+      "id": 16,
+      "portNumber": "161"
+    },
+    {
+      "id": 17,
+      "portNumber": "179"
+    },
+    {
+      "id": 18,
+      "portNumber": "194"
+    },
+    {
+      "id": 19,
+      "portNumber": "443"
+    },
+    {
+      "id": 20,
+      "portNumber": "546"
+    }
+  ],
+  "posts": [{
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "another post",
+      "author": "Mike"
+    },
+    {
+      "title": "check it out",
+      "author": "Mike",
+      "id": 3
+    }
+  ],
+  "dns": {
+    "id": 1,
+    "name": "defaultDNS.com"
+  },
+  "proxy": {
+    "id": 1,
+    "name": "defaultProxy.com"
+  },
+  "webpage": {
+    "id": 1,
+    "name": "http://weboldal.com"
+  }
+}

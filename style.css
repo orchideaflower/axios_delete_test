@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.kozepe {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  /* ?????? margin: auto; */
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* .container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  ?????? margin: auto; 
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+
+} */
+
+/* .container.py-0 {
+  background-color: #D9EBEE;
+} */
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#down_menu,
+#dropdown_profilok1,
+#alap_start {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+#dropdown_profilok1:hover {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+#dropdown_profilok1 {
+  padding: 0;
+  /* important*/
+}
+
+#stop1 {
+  color: white;
+}
+
+#inline_tcp,
+#inline_dns,
+#inline_proxy,
+#inline_browsing {
+  /* Double-sized Checkboxes */
+  transform: scale(1.5);
+  /* IE */
+  -moz-transform: scale(1.5);
+  /* FF */
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  -o-transform: scale(1.5);
+  /* Opera */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0.45rem;
+
+  /* position: relative; */
+}
+
+
+
+/* @media screen and (max-width: 764px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    border-bottom: 1px dotted #ccc;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+} */
+
+.port_disable,
+td.port_disable:hover {
+  background: #F00;
+  /* cursor: none; */
+  /* Or some other color */
+}
+
+
+#table_header,
+#dns_header,
+#search_header,
+#proxy_header {
+  /* display: inline-flex; */
+  justify-content: center;
+  align-items: baseline;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* input#url_WEB {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+} */
+
+label#label_DNS {
+  margin-top: 0;
+  margin-right: 3rem;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+label#label_Proxy {
+  margin-top: 0;
+  margin-right: 2.5rem;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+label#label_WEB {
+  margin-top: 0;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+td:hover {
+  background-color: rgb(209, 209, 208);
+  cursor: pointer;
+}
+
+.form-check {
+  padding: 0;
+  position: left;
+}
+
+.fa-home,
+.fa-play-circle {
+  margin-right: 0rem;
+}
+
+.fa-arrow-right {
+  margin-left: 0rem;
+}
+
+.card-header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: rgb(217, 235, 238);
+}
+
+div.card {
+  /* color: white; */
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  border: 2px;
+  border-radius: 0;
+  border-color: rgb(217, 235, 238);
+  background-color: rgb(217, 235, 238);
+}
+
+div.card.kartya {
+  border-bottom: 1px solid blue;
+}
+
+.progress {
+  height: 20px;
+}
+
+.dropdown-item {
+  border: 0;
+  margin: 0;
+  background-color: #218acb;
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: #0062cc;
+}
+
+#next-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#meres1,
+#meres2,
+#meres3,
+#meres4 {
+  border-radius: 25%;
+  color: white;
+  margin: 0;
+  background-color: #007bff;
+  /* background-color: rgb(33, 138, 203) */
+  /* border-bottom: 1px solid blue; */
+}
+
+#meres1:hover,
+#meres2:hover,
+#meres3:hover,
+#meres4:hover {
+  background-color: #007bff;
+  cursor: none;
+}
+
+#result,
+#start,
+#vissza {
+  border-radius: 0%;
+  color: white;
+}
+
+#stop1,
+#stop2,
+#stop3,
+#stop4 {
+  margin: 1rem 0;
+  color: black;
+  border: 1px solid black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+}
